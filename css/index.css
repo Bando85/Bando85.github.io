@@ -1,0 +1,378 @@
+@font-face {
+    font-family: "Hammersmith One";
+    src: url("../fonts/HammersmithOne-Regular.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-logo {
+    width: 300px;
+    display: flex;
+}
+
+#octopus-logo {
+    width: 70px;
+    height: 70px;
+}
+
+#octopus-chars {
+    max-width: 150px;
+    padding: 10px;
+}
+
+section.content {
+    min-height: 300px;
+    display: flex;
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Hammersmith One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: #F0F0F0;
+}
+
+h1.first {
+
+    display: block;
+    animation: fadeOutH1first ease 1s;
+    animation-delay: 1.0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeOutH1first {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: 0;
+    }
+}
+
+
+
+h1.second {
+
+    display: none;
+    animation: fadeOutH1second ease 1s;
+    animation-delay: 1.0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeOutH1first {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: 0;
+    }
+}
+
+h2 {
+    font-family: 'Hammersmith One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    color: #F0F0F0;
+}
+
+p {
+    font-family: 'Hammersmith One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #F0F0F0;
+}
+
+.h1-sign {
+    color: rgba(27, 227, 240, 1);
+}
+
+.h1-sign2 {
+    color: rgb(246, 255, 0);
+}
+
+
+
+#site-background {}
+
+.background-logos {
+    display: none;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #050505;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+
+    animation: fadeOut ease 1s;
+    animation-delay: 4.0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: 0;
+    }
+}
+
+#octopus-with-text {
+    display: none;
+
+    position: absolute;
+    max-width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    animation: fadeOut ease 0.5s;
+    animation-delay: 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+
+}
+
+.gradient-blue {
+
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    left: -18%;
+    top: 10%;
+
+    background: #1328E2;
+    filter: blur(150px);
+    transform: matrix(0.99, -0.54, -0.08, 0.9, 0, 0);
+    animation: gradient-blue 14s ease infinite;
+}
+
+@keyframes gradient-blue {
+    0% {
+        background: #1328E2;
+    }
+
+    50% {
+        background: #5764d5;
+    }
+
+    100% {
+        background: #1328E2;
+    }
+}
+
+
+
+.gradient-white {
+    position: absolute;
+    width: 90%;
+    height: 25%;
+
+    left: 5%;
+    top: -5%;
+
+    background: rgba(255, 255, 255, 0.9);
+    filter: blur(150px);
+    transform: matrix(0.82, 0.47, 0.64, 0.85, 0, 0);
+    animation: gradient-white 20s ease infinite;
+}
+
+@keyframes gradient-white {
+    0% {
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    50% {
+        background: rgba(150, 255, 255, 0.9);
+    }
+
+    100% {
+        background: rgba(255, 255, 255, 0.9);
+    }
+}
+
+
+
+
+#spring-logo {
+    position: absolute;
+    left: 35.97%;
+    right: 47.01%;
+    top: 31.83%;
+    bottom: 62.02%;
+}
+
+#js-logo {
+    position: absolute;
+    left: 1104px;
+    top: 690px;
+}
+
+#vs-code-logo {
+    position: absolute;
+    left: 66.6%;
+    right: 28.26%;
+    top: 39.45%;
+    bottom: 53.61%;
+}
+
+#intellij-logo {
+    position: absolute;
+    left: 85.97%;
+    right: 8.47%;
+    top: 19.43%;
+    bottom: 72.75%;
+}
+
+
+
+
+.menu-icon {
+    width: 40px;
+    z-index: 1;
+    background-color: transparent;
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 3;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 3;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 3;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 3;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 3;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 3;
+}
+
+
+
+
+
+
+.sidenav {
+    display: block;
+    border-left: 1px solid rgba(0, 162, 255, 0.556);
+    margin-left: 5px;
+    width: 130px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 20px 8px;
+    text-decoration: none;
+    font-family: 'Hammersmith One';
+    font-size: 18px;
+    opacity: inherit;
+    color: #aeaeae;
+    display: block;
+}
+
+.sidenav .first {
+    transition: 0.2s;
+}
+
+.sidenav .second {
+    transition: 0.4s;
+}
+
+.sidenav .third {
+    transition: 0.6s;
+}
+
+.sidenav .fourth {
+    transition: 0.8s;
+}
+
+.sidenav a:hover {
+    color: #b6fff9;
+}

@@ -1,0 +1,12 @@
+<svg id="vs-code-logo" width="94" height="91" viewBox="0 0 94 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_45_82)">
+<path d="M36.3427 53.4577L18.0009 67.108L10 63.3028V27.7274L17.9692 23.892L36.1846 37.5725L65.0256 10L84 17.2178V73.6614L65.1205 81L36.3427 53.4577ZM64.4564 58.2595V32.7405L47.1897 45.5151L64.4564 58.2595ZM18.6333 53.6691L27.7094 45.7869L18.6333 37.1497V53.6691Z" fill="#0179CB"/>
+</g>
+<defs>
+<filter id="filter0_f_45_82" x="0" y="0" width="94" height="91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_45_82"/>
+</filter>
+</defs>
+</svg>
