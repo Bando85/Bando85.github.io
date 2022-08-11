@@ -39,7 +39,7 @@ nav {
 }
 
 section.content {
-    min-height: 300px;
+    min-height: 250px;
     display: flex;
     flex: 1;
 }
