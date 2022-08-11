@@ -345,15 +345,15 @@ p {
 
 #gradient-canvas {
     position: absolute;
-    left: 0;
-    bottom: 30%;
+    left: 0px;
+    bottom: 20%;
     width:100%;
-    height:80%;
+    height:100%;
     --gradient-color-1: #000000; 
     --gradient-color-2: #004e52; 
     --gradient-color-3: #003962;  
     --gradient-color-4: #232323;
-    transform: skewY(10deg);
-    z-index:-1;
+    transform: skewY(8deg);
+    z-index:-2;
     overflow: hidden;
   }
