@@ -24,16 +24,18 @@ nav {
 .nav-logo {
     width: 300px;
     display: flex;
+    margin-left: 5px;
 }
 
 #octopus-logo {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 #octopus-chars {
-    max-width: 150px;
-    padding: 10px;
+    width: 120px;
+    height: 50px;
+    margin-left: 10px;
 }
 
 section.content {
@@ -170,7 +172,6 @@ p {
 }
 
 #octopus-with-text {
-    display: none;
 
     position: absolute;
     max-width: 50%;
@@ -283,7 +284,7 @@ p {
 
 .menu-icon {
     width: 40px;
-    z-index: 1;
+    z-index: 0;
     background-color: transparent;
     opacity: 0.5;
     border: none;
