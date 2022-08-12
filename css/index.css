@@ -9,7 +9,7 @@ html {
 
 body {
     display: flex;
-    min-height: 100%;
+    min-height: 100vh;
     flex-direction: column;
     background-color: black;
 }
@@ -39,7 +39,7 @@ nav {
 }
 
 section.content {
-    min-height: 250px;
+    min-height: 310px;
     display: flex;
     flex: 1;
 }
@@ -48,6 +48,10 @@ footer {
     display: flex;
     justify-content: center;
     padding: 20px;
+}
+
+.text-place {
+    flex: 1;
 }
 
 h1 {
@@ -59,52 +63,23 @@ h1 {
     color: #F0F0F0;
 }
 
+h1.m-text {
+    transition: 1.5s;
+}
+
 h1.first {
-
     display: block;
-    animation: fadeOutH1first ease 1s;
-    animation-delay: 1.0s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
+    opacity: 1;
 }
-
-@keyframes fadeOutH1first {
-    0% {
-        opacity: 1;
-        display: block;
-    }
-
-    100% {
-        opacity: 0;
-        display: none;
-        z-index: 0;
-    }
-}
-
-
 
 h1.second {
-
     display: none;
-    animation: fadeOutH1second ease 1s;
-    animation-delay: 1.0s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
+    opacity: 0;
 }
 
-@keyframes fadeOutH1first {
-    0% {
-        opacity: 1;
-        display: block;
-    }
-
-    100% {
-        opacity: 0;
-        display: none;
-        z-index: 0;
-    }
+h1.third {
+    display: none;
+    opacity: 0;
 }
 
 h2 {
@@ -133,6 +108,21 @@ p {
     color: rgb(246, 255, 0);
 }
 
+.e-mail-address a {
+    text-decoration: none;
+    font-family: 'Hammersmith One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #00ffcc;
+    transition: 0.3s;
+}
+
+.e-mail-address a:hover { 
+    color: #e8e8e8;
+    transition: 0.3s;
+}
 
 
 #site-background {}
@@ -184,34 +174,6 @@ p {
     animation-delay: 3.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-
-.gradient-blue {
-
-    position: absolute;
-    width: 70%;
-    height: 40%;
-    left: -18%;
-    top: 10%;
-
-    background: #1328E2;
-    filter: blur(150px);
-    transform: matrix(0.99, -0.54, -0.08, 0.9, 0, 0);
-    /* animation: gradient-blue 14s ease infinite; */
-}
-
-.gradient-white {
-    position: absolute;
-    width: 90%;
-    height: 25%;
-
-    left: 5%;
-    top: -5%;
-
-    background: rgba(255, 255, 255, 0.9);
-    filter: blur(150px);
-    transform: matrix(0.82, 0.47, 0.64, 0.85, 0, 0);
-    /* animation: gradient-white 20s ease infinite; */
 }
 
 #spring-logo {
@@ -308,7 +270,7 @@ p {
     display: block;
     border-left: 1px solid rgba(0, 162, 255, 0.556);
     margin-left: 5px;
-    width: 130px;
+    flex: 0 0 130px;
     opacity: 0;
     transition: 0.5s;
 }
@@ -356,4 +318,4 @@ p {
     transform: skewY(8deg);
     z-index:-2;
     overflow: hidden;
-  }
+}

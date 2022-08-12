@@ -120,8 +120,7 @@
             </svg>
         </div>
 
-        <button class="menu-icon"
-            aria-label="Main Menu">
+        <button class="menu-icon" aria-label="Main Menu">
             <svg width="100" height="100" viewBox="0 0 100 100">
                 <path class="line line1"
                     d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -132,15 +131,20 @@
         </button>
 
     </nav>
-    
+
     <section class="content">
-        
-        <h1 class="first">
-            Precision, Efficiency, and  Obsession at <span class="h1-sign">&lt;</span>coding<span class="h1-sign">&gt;</span>
-        </h1>
-        <h1 class="second">
-            Automate your workflow, scrape the web, design your database with <span class="h1-sign2">&#35;</span>us
-        </h1>
+        <div class="text-place">
+            <h1 class="m-text first">
+                Precision, Efficiency, and Obsession at <span class="h1-sign">&lt;</span>coding<span
+                    class="h1-sign">&gt;</span>
+            </h1>
+            <h1 class="m-text second">
+                Automate your workflow, scrape the web, design your database with <span class="h1-sign2">&#35;</span>us
+            </h1>
+            <h1 class="m-text third">
+                Third mtext <span class="h1-sign2">&#35;</span>us
+            </h1>
+        </div>
         <div id="mySidenav" class="sidenav">
             <a class="first" href="#">Home</a>
             <a class="second" href="#">Technologies</a>
@@ -153,8 +157,7 @@
         <h2>
             Get in touch.
         </h2>
-        <p>
-            hello@silveroctopus.hu
+        <p class="e-mail-address">
         </p>
     </section>
 
@@ -184,7 +187,7 @@
                     </filter>
                 </defs>
             </svg>
-    
+
             <svg id="spring-logo" width="255" height="83" viewBox="0 0 255 83" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_45_106)">
@@ -217,15 +220,15 @@
                         fill="#5FB832" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_45_106" x="0" y="0" width="265.092" height="82.9807" filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB">
+                    <filter id="filter0_f_45_106" x="0" y="0" width="265.092" height="82.9807"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                         <feFlood flood-opacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_45_106" />
                     </filter>
                 </defs>
             </svg>
-    
+
             <svg id="vs-code-logo" width="94" height="91" viewBox="0 0 94 91" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_45_82)">
@@ -242,7 +245,7 @@
                     </filter>
                 </defs>
             </svg>
-    
+
             <svg id="intellij-logo" width="100" height="100" viewBox="0 0 100 100" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_45_118)">
@@ -250,7 +253,8 @@
                         fill="url(#paint0_linear_45_118)" />
                     <path d="M90 31.375L88.5 77.625L57.75 90L39.25 78L66.25 50L54.5 24L65.125 11.25L90 31.375Z"
                         fill="url(#paint1_linear_45_118)" />
-                    <path d="M90 31.375L65.625 60.125L54.5 24L65.125 11.25L90 31.375Z" fill="url(#paint2_linear_45_118)" />
+                    <path d="M90 31.375L65.625 60.125L54.5 24L65.125 11.25L90 31.375Z"
+                        fill="url(#paint2_linear_45_118)" />
                     <path
                         d="M48.5 76.375L16.5 88L21.625 70L28.25 47.75L10 41.625L21.625 10L46.625 13L71.375 41.25L48.5 76.375Z"
                         fill="url(#paint3_linear_45_118)" />
@@ -486,7 +490,7 @@
 
     <footer>
         <p>
-            this is the footer
+            - Created by Andras Laczo -
         </p>
     </footer>
 
@@ -494,36 +498,73 @@
     <script>
 
         const menuButton = document.querySelector(".menu-icon");
-        menuButton.addEventListener("click", ()=>toggleMenu(menuButton));
-     
+        menuButton.addEventListener("click", () => toggleMenu(menuButton));
+
 
         function toggleMenu(menuButton) {
             menuButton.classList.toggle('opened');
             menuButton.setAttribute('aria-expanded', menuButton.classList.contains('opened'));
-           if (menuButton.classList.contains('opened')) openNav()
-           else closeNav();
+            if (menuButton.classList.contains('opened')) openNav()
+            else closeNav();
         }
-        
+
 
         function openNav() {
             console.log("this opens")
             document.getElementById("mySidenav").style.zIndex = "10";
-            document.getElementById("mySidenav").style.opacity= "1";
+            document.getElementById("mySidenav").style.opacity = "1";
         }
 
         function closeNav() {
             console.log("this close")
             document.getElementById("mySidenav").style.zIndex = "-2";
-            document.getElementById("mySidenav").style.opacity= "0";
+            document.getElementById("mySidenav").style.opacity = "0";
         }
 
+        function putEmail() {
+            var eml = 'hello'              // The email address...
+            eml += '@'
+            eml += 'silveroctopus.hu'
+
+            var link = document.createElement("a");
+            link.setAttribute("href", "mailto:" + eml);
+            link.appendChild(document.createTextNode(eml));
+            var atag = document.querySelector(".e-mail-address")
+            atag.appendChild(link);
+            
+        }
+        
+        let textElements = document.querySelectorAll(".m-text");
+        let textArr = [...textElements];
+        setInterval(()=>changeText(textArr), 5000);
+
+        let changeText = async textArr => {
+
+            let textEl = textArr.shift();
+            textEl.style.opacity = "0";
+            console.log("before")
+            await new Promise(r => setTimeout(r, 1500));
+            console.log("after")
+            textEl.style.display = "none";
+            await new Promise(r => setTimeout(r, 500));
+            textArr.push(textEl);
+
+            let nextTextEl = textArr[0];
+            nextTextEl.style.display = "block";
+            await new Promise(r => setTimeout(r, 500));
+            nextTextEl.style.opacity = "1";
+        }
+
+        putEmail();
+
+        
+        
 
 
 
     </script>
 
     <script src="/js/gradient.js"></script>
-
 
 </body>
 
