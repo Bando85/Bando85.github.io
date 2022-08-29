@@ -54,6 +54,11 @@ footer {
     flex: 1;
 }
 
+.tech-logos svg {
+    height: 70px;
+    padding: 2px;
+}
+
 h1 {
     font-family: 'Hammersmith One';
     font-style: normal;
@@ -82,6 +87,19 @@ h1.third {
     opacity: 0;
 }
 
+
+h1 .signed {
+    color: rgba(27, 227, 240, 1);
+}
+
+h1 .signed2 {
+    color: rgb(246, 255, 0);
+}
+
+h1 .signed3 {
+    color: rgb(4, 255, 0);
+}
+
 h2 {
     font-family: 'Hammersmith One';
     font-style: normal;
@@ -91,6 +109,38 @@ h2 {
     color: #F0F0F0;
 }
 
+.m-texts {
+    display: block;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.technologies {
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.latest-projects {
+    display: none;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+h3 {
+    font-family: 'Hammersmith One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F0F0F0;
+}
+
+h3 .signed {
+    color: rgba(27, 227, 240, 1);
+}
+
 p {
     font-family: 'Hammersmith One';
     font-style: normal;
@@ -98,14 +148,6 @@ p {
     font-size: 12px;
     line-height: 10px;
     color: #F0F0F0;
-}
-
-.h1-sign {
-    color: rgba(27, 227, 240, 1);
-}
-
-.h1-sign2 {
-    color: rgb(246, 255, 0);
 }
 
 .e-mail-address a {
@@ -162,7 +204,7 @@ p {
 }
 
 #octopus-with-text {
-    display: none;
+    display: block;
     position: absolute;
     max-width: 50%;
     top: 50%;
@@ -185,9 +227,7 @@ p {
 }
 
 #js-logo {
-    position: absolute;
-    left: 1104px;
-    top: 690px;
+    
 }
 
 #vs-code-logo {
