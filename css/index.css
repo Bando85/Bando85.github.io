@@ -44,6 +44,10 @@ section.content {
     flex: 1;
 }
 
+section.contact {
+    z-index: 0;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -51,6 +55,7 @@ footer {
 }
 
 .text-place {
+    height: 400px;
     flex: 1;
 }
 
@@ -63,8 +68,8 @@ h1 {
     font-family: 'Hammersmith One';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 35px;
     color: #F0F0F0;
 }
 
@@ -133,7 +138,7 @@ h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 16px;
     color: #F0F0F0;
 }
 
@@ -146,7 +151,7 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 10px;
+    line-height: 14px;
     color: #F0F0F0;
 }
 
@@ -199,7 +204,7 @@ p {
     100% {
         opacity: 0;
         display: none;
-        z-index: 0;
+        z-index: -1;
     }
 }
 
