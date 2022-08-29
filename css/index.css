@@ -55,12 +55,12 @@ footer {
 }
 
 .text-place {
-    height: 400px;
+    min-height: 400px;
     flex: 1;
 }
 
 .tech-logos svg {
-    height: 70px;
+    height: 60px;
     padding: 2px;
 }
 
@@ -68,8 +68,8 @@ h1 {
     font-family: 'Hammersmith One';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 40px;
+    line-height: 50px;
     color: #F0F0F0;
 }
 
@@ -109,7 +109,7 @@ h2 {
     font-family: 'Hammersmith One';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 37px;
     color: #F0F0F0;
 }
@@ -118,6 +118,8 @@ h2 {
     display: block;
     opacity: 1;
     transition: 0.5s;
+
+
 }
 
 .technologies {
@@ -315,7 +317,7 @@ p {
     display: block;
     border-left: 1px solid rgba(0, 162, 255, 0.556);
     margin-left: 5px;
-    flex: 0 0 130px;
+    flex: 0 0 85px;
     opacity: 0;
     transition: 0.5s;
 }
