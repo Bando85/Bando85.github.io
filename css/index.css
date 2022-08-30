@@ -71,6 +71,7 @@ h1 {
     font-size: 40px;
     line-height: 50px;
     color: #F0F0F0;
+    margin-top: 5px;
 }
 
 h1.m-text {
@@ -112,6 +113,7 @@ h2 {
     font-size: 30px;
     line-height: 37px;
     color: #F0F0F0;
+    margin-top: 5px;
 }
 
 .m-texts {
@@ -140,8 +142,9 @@ h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 18px;
     color: #F0F0F0;
+    margin-top: 5px;
 }
 
 h3 .signed {
