@@ -75,8 +75,15 @@ footer {
 }
 
 .tech-logos svg {
-    height: 60px;
-    padding: 2px;
+    height: 50px;
+    padding: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+    .tech-logos svg {
+        height: 70px;
+        padding: 3px;
+    }
 }
 
 h1 {
@@ -86,7 +93,13 @@ h1 {
     font-size: 40px;
     line-height: 50px;
     color: #F0F0F0;
-    margin-top: 5px;
+    margin: 5px 0px 10px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        margin: 10px 0px 15px 0px;
+    }
 }
 
 h1.m-text {
@@ -128,7 +141,13 @@ h2 {
     font-size: 30px;
     line-height: 37px;
     color: #F0F0F0;
-    margin-top: 5px;
+    margin: 5px 10px 0px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        margin: 10px 0px 15px 0px;
+    }
 }
 
 .m-texts {
@@ -176,9 +195,17 @@ h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 16px;
     color: #F0F0F0;
-    margin-top: 5px;
+    margin: 5px 0px 10px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    h3 {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 10px 0px 15px 0px;
+    }
 }
 
 h3 .signed {
@@ -216,6 +243,8 @@ p {
 }
 
 #preloader {
+    
+
     position: fixed;
     top: 0;
     left: 0;
