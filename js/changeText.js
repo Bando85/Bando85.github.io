@@ -1,3 +1,8 @@
+let textElements = document.querySelectorAll(".m-text");
+        let textArr = [...textElements];
+        setTimeout(() => startHomeAnimation(), 5000);
+        let startHomeAnimation = () => setInterval(() => changeText(textArr), 7000);
+
 let changeText = async textArr => {
 
     let textEl = textArr.shift();
